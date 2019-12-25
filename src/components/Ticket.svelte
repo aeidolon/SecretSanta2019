@@ -20,11 +20,9 @@
 
   function play() {
     anim = true;
-    if (src == "ticket.png") {
+    if (src === "ticket.png") {
       src = "ticket1.png";
-    }
-
-    if (src == "ticket1.png") {
+    } else if (src === "ticket1.png") {
       src = "ticket2.png";
     }
 

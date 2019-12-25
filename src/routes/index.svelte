@@ -30,6 +30,15 @@
     z-index: 10;
     color: #ddd;
   }
+  .text {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    color: #ddd;
+  }
   h2 {
     font-size: 3em;
     margin: 50px 0 0.5em 0;
@@ -72,8 +81,10 @@
 
 <main>
   <div class="bg" />
-  <div class="fix">
+  <div class="text">
     <h2>{tex}</h2>
+  </div>
+  <div class="fix">
     <Ticket bind:tex />
     <Snow />
   </div>
